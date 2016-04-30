@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Chi-cuision: Your Chinese menu</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+    
+    <style type="text/css">
+	  .search{
+		  position: relative;
+		  display: block;
+		  width: 256px;
+		  padding: 0;
+	  }
+	  
+	  .top-nav {
+		  width:69%;
+	  }
+	  
+	  @media (max-width: 1000px) {
+		  .top-nav {
+			  width: 63%;
+		  }
+	  }
+	  
+	  @media (max-width: 768px) {
+		  .top-nav {
+			  width: 10%;
+		  }
+	  }
+	  
+	  @media (max-width: 480px) {
+		  span.menu img {
+			  width:32px;
+		  }
+	  }
+	  
+	  .search input[type=text] {
+		  width:100%;
+		  height:30px;
+		  border-radius:5px;
+		  outline:none;
+		  border:none;
+		  border:1px solid #999;
+		  padding-right:30px;
+		  padding-left:10px;
+		  box-sizing:border-box;
+	  }
+	  
+	  .search input[type=submit] {
+		  position:absolute;
+		  right:0px;
+		  top:0px;
+		  background:url('images/search.png') center center no-repeat;
+		  width:30px;
+		  height:30px;
+		  border:none;
+	  }
+	  
+	  .search form {
+		  margin:0px;
+		  padding:0px;
+	  }
+	</style>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header-strip"></div>
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			  <div class="logo">
+			  	<h1><a href="index.html">Chi-Cuisine</a></h1>
+			  </div>
+        </div>
+	</div>
+</div>
+<div class="navg-strip">
+    <div class="container">
+        <div class="navg-main">
+      	    <div class="top-nav">
+      	 	    <span class="menu"> <img src="images/icon.png" alt=""/></span>
+			    <ul class="res">
+				    <li><a href="
+				        index.html" class="active">Home</a></li>
+				    <li><a class="scroll" href="#recipes">Recipes&Menus</a></li>
+				    <li><a class="scroll" href="#map">Foodmap</a></li>
+			        <li><a class="scroll" href="#contact">Contact</a></li>
+			    </ul> 
+			    <!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$("ul.res").slideToggle(500, function(){
+							});
+                        });
+			        </script>	
+		    </div>
+	    	<div class="search-in" >
+		    	<div class="search" >
+				    <form>
+				 	    <input type="text"  class="text">
+				    	<input type="submit" value="">
+			    	</form>
+			    </div>
+	        </div>
+	    
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--header end here-->
+<!--banner start here-->
+<div class="banner">
+	<div class="container">
+		<div class="banner-main">
+			<h2>Find your favourite Chinese food</h2>
+			<p>Explore how to cook and where to eat</p>
+		</div>
+	</div>
+</div>
+<!--banner end here-->
+<!--ab-info start here-->
+<div class="ab-info">
+	<div class="container">
+		<div class="ab-info-main">
+			<div class="ab-info-bott">
+			  <div class="col-md-6 ab-info-left">
+			  	<h3>What the Chinese Eat</h3>
+			  </div>
+			  <div class="col-md-6 ab-info-right">
+			  	<p>"The Chinese eat everything with four legs, except tables, and everything that flies, except airplanes.”</p>
+			  	<strong>-  Anon</strong>
+			  </div>
+		   </div>
+		</div>
+	</div>
+</div>
+<!--ab-info end here-->
+<!--recipes start here-->
+<div class="recipes" id="recipes">
+	<div class="container">
+		<div class="recipes-top">
+			<h3>Recipes & Menus</h3>
+			<p>Find out about some of the unique dishes of a nation who are willing to eat just about anything. Also see... </p>
+		</div>
+			<div class="recipes-bottom">
+			<div class="col-md-4 recipes-grid">
+				<div class="project-eff">
+					<div id="nivo-lightbox-demo"> <p> <a href="single1.html" data-lightbox-recipes="recipes1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div> 
+					<img class="img-responsive" src="images/sweetandsourpork.jpg" alt="">
+					<div class="name">Sweet and Sour Pork</div>
+				</div>
+			</div>
+			<div class="col-md-4 recipes-grid">
+				<div class="project-eff">
+					<div id="nivo-lightbox-demo"> <p> <a href="single2.html" data-lightbox-recipes="recipes1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div>     
+					<img class="img-responsive" src="images/kungpaochicken.jpg" alt="">
+					<div class="name">Kung Pao Chicken</div>
+				</div>
+			</div>
+			<div class="col-md-4 recipes-grid">
+				<div class="project-eff">
+					<div id="nivo-lightbox-demo"> <p> <a href="single3.html" data-lightbox-recipes="recipes1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div>     
+					<img class="img-responsive" src="images/wontons.jpg" alt="">
+					<div class="name">Wontons</div>
+				</div>
+			</div>
+            <div class="col-md-4 recipes-grid">
+				<div class="project-eff">
+					<div id="nivo-lightbox-demo"> <p> <a href="single4.html" data-lightbox-recipes="recipes1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div>     
+					<img class="img-responsive" src="images/dumplings.jpg" alt="">
+					<div class="name">Dumplings</div>
+				</div>
+			</div>
+			<div class="col-md-4 recipes-grid">
+				<div class="project-eff">
+					<div id="nivo-lightbox-demo"> <p> <a href="single5.html" data-lightbox-recipes="recipes1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div>     
+					<img class="img-responsive" src="images/chowmein.jpg" alt="">
+					<div class="name">Chowmein</div>
+				</div>
+			</div>
+			<div class="col-md-4 recipes-grid">
+				<div class="project-eff">
+					<div id="nivo-lightbox-demo"> <p> <a href="single6.html" data-lightbox-recipes="recipes1" id="nivo-lightbox-demo"> <span class="rollover1"> </span></a> </p></div>     
+					<img class="img-responsive" src="images/pekingroastedduck.jpg" alt="">
+					<div class="name">Peking Roasted Duck</div>
+				</div>
+			</div>
+		    <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+			<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+				<script type="text/javascript">
+				$(document).ready(function(){
+				    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
+				});
+				</script>
+<!--recipes end here-->
+<!--map start here-->
+<div class="map" id="map">
+	<img class="foodmap" src="images/map.png" alt="foodmap"> 
+</div>
+<!--map end here-->
+<!--contact start here-->
+<div class="contact" id="contact">
+	<div class="container">
+		<div class="contact-main">
+			<div class="contact-top">
+				<h3>Contact</h3>
+				<p>Have something to say about our site? Enter your comments and click on the submit button.</p>
+			</div>
+		  <div class="contact-bottom">
+		  	<form action="" method="post">
+		    	<div class="col-md-6 contact-left">
+			    	<input type="text" id="name" placeholder="Name" required>
+			    	<input type="text" id="email" placeholder="Email" required>
+			    	<input type="text" id="phone" placeholder="Phone" required>
+		    	</div>
+		    	<div class="col-md-6 contact-right">
+			    	 <textarea id="message" placeholder="Message" required=""></textarea>
+			     	 <input type= "submit" value="Submit">
+			    </div>
+			</form> 
+			<div class="clearfix"> </div>
+		   </div>
+		</div>
+	</div>
+</div>
+<!--contact end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			 <section class="col-md-3 ftr-title">
+                    <h4  class="section-title">Chi-Cuisne</h4>
+             </section>
+             <div class="col-md-3 ftr-grd">
+                 <h3>Site Link</h3>
+                <ul class="ftr-links">
+                	<li><a href="#home">Home</a></li>
+				    <li><a href="#recipes">Recipes & Menus</a></li>
+				    <li><a href="#map">Food maps</a></li>
+				    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </div>
+             <div class="col-md-3 ftr-grd">
+                   <h3>Quick Links</h3>
+                   <ul class="ftr-categ">
+					<li><a href="#">Healthy Recipes</a></li>
+					<li><a href="#">Low-Cal Recipes</a></li>
+					<li><a href="#">Low-Fat Recipes</a></li>
+					<li><a href="#">Mediterranean Recipes</a></li>
+					<li><a href="#">Vegetarian Recipes</a></li>
+				</ul>
+             </div>
+          <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+<!--footer end here-->
+<!--copyright start here-->
+<div class="copyright">
+	<div class="container">
+	   <div class="copy-main">
+			<p> © 2016 Chi-Cuisine. All rights reserved | Design by Shuyi Zheng </a></p>
+	   </div>
+	   <script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  </div>
+</div>
+<!--copyright end here-->

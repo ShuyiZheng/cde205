@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Chi-cuision: Your Chinese menu</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+    
+    <style type="text/css">
+	  .search{
+		  position: relative;
+		  display: block;
+		  width: 256px;
+		  padding: 0;
+	  }
+	  
+	  .top-nav {
+		  width:69%;
+	  }
+	  
+	  @media (max-width: 1000px) {
+		  .top-nav {
+			  width: 63%;
+		  }
+	  }
+	  
+	  @media (max-width: 768px) {
+		  .top-nav {
+			  width: 10%;
+		  }
+	  }
+	  
+	  @media (max-width: 480px) {
+		  span.menu img {
+			  width:32px;
+		  }
+	  }
+	  
+	  .search input[type=text] {
+		  width:100%;
+		  height:30px;
+		  border-radius:5px;
+		  outline:none;
+		  border:none;
+		  border:1px solid #999;
+		  padding-right:30px;
+		  padding-left:10px;
+		  box-sizing:border-box;
+	  }
+	  
+	  .search input[type=submit] {
+		  position:absolute;
+		  right:0px;
+		  top:0px;
+		  background:url('images/search.png') center center no-repeat;
+		  width:30px;
+		  height:30px;
+		  border:none;
+	  }
+	  
+	  .search form {
+		  margin:0px;
+		  padding:0px;
+	  }
+	</style>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header-strip"></div>
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			  <div class="logo">
+			  	<h1><a href="index.html">Chi-Cuisine</a></h1>
+			  </div>
+        </div>
+	</div>
+</div>
+<div class="navg-strip">
+    <div class="container">
+        <div class="navg-main">
+      	    <div class="top-nav">
+      	 	    <span class="menu"> <img src="images/icon.png" alt=""/></span>
+			    <ul class="res">
+				    <li><a href="
+				        index.html" class="active">Home</a></li>
+				    <li><a class="scroll" href="#recipes">Recipes&Menus</a></li>
+				    <li><a class="scroll" href="#map">Foodmap</a></li>
+			        <li><a class="scroll" href="#contact">Contact</a></li>
+			    </ul> 
+			    <!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$("ul.res").slideToggle(500, function(){
+							});
+                        });
+			        </script>	
+		    </div>
+	    	<div class="search-in" >
+		    	<div class="search" >
+				    <form>
+				 	    <input type="text"  class="text">
+				    	<input type="submit" value="">
+			    	</form>
+			    </div>
+	        </div>
+	    
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--header end here-->
+<!--single start here-->
+<div class="single">
+	<div class="container">
+	    <div class="col-md-8 ">
+			<div class=" single-grid">
+				<img class="img-responsive" src="images/p1.jpg" alt=""  class="img-responsive">
+				<div class="lone-line">
+					<h4>Sweet and Sour chicken</h4>
+					<p>One of the classic dishes of the Han people (90% of Chinese), sweet and sour pork is included in Zhejiang cuisine, Shandong cuisine, Sichuan cuisine, and Cantonese cuisine, of which the Shandong-cuisine style is the most popular.</p>
+					<h4>Sweet and Sour Pork Nutrition</h4>
+					<p>The tenderloin is the most tender cut of pork. It is very rich in protein and contains fat and some trace elements, such as calcium, phosphorus, thiamin (vitamin B1), iron, and niacin (vitamin B3).The hemoglobin in the tenderloin can allay anemia. Much more effectively absorbed by humans than the iron contained in vegetables, it's favored by Chinese people (for whom anemia is more prevalent than in the West).</p>
+					<h5>Preparation</h5>
+					<p>1. Crack the egg into a bowl. Separate the egg white and yolk.</p>
+					<img class="img-responsive " src="images/s1.jpg" alt="">
+					<p>2. Slice the pork tenderloin into strips.</p>
+				   	<p>3. Prepare the marinade using a pinch of salt, one teaspoon of starch, two teaspoons of light soy sauce, and an egg white.</p>
+				    <p>4. Marinade the pork strips for about 20 minutes.</p>
+				    <p>5. Put the remaining starch in a bowl. Add some water and vinegar to make a starchy sauce.</p>
+				    <img class="img-responsive " src="images/s2.jpg" alt="">
+				    <h5>Cooking Instructions</h5>
+				    <p>1. Pour the cooking oil into a wok and heat to 190°C (375°F). Add the marinated pork strips and fry them until they turn brown. Remove the cooked pork from the wok and place on a plate.</p>
+				   	<p>2. Leave some oil in the wok. Put the tomato sauce and white sugar into the wok, and heat until the oil and sauce are fully combined.</p>
+				    <p>3. Add some water to the wok and thoroughly heat the sweet and sour sauce before adding the pork strips to it.</p>
+				    <p>4. Pour in the starchy sauce. Stir-fry all the ingredients until the pork and sauce are thoroughly mixed together.</p>
+				    <p>5. Serve on a plate and add some coriander for decoration.</p>
+				    <img class="img-responsive " src="images/s3.jpg" alt="">
+				</div>
+			</div>
+	    </div>
+    </div>
+</div>
+
+<!--//single end here-->
+
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			 <section class="col-md-3 ftr-title">
+                    <h4  class="section-title">Chi-Cuisne</h4>
+             </section>
+             <div class="col-md-3 ftr-grd">
+                 <h3>Site Link</h3>
+                <ul class="ftr-links">
+                	<li><a href="#home">Home</a></li>
+				    <li><a href="#recipes">Recipes & Menus</a></li>
+				    <li><a href="#map">Food maps</a></li>
+				    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </div>
+             <div class="col-md-3 ftr-grd">
+                   <h3>Quick Links</h3>
+                   <ul class="ftr-categ">
+					<li><a href="#">Healthy Recipes</a></li>
+					<li><a href="#">Low-Cal Recipes</a></li>
+					<li><a href="#">Low-Fat Recipes</a></li>
+					<li><a href="#">Mediterranean Recipes</a></li>
+					<li><a href="#">Vegetarian Recipes</a></li>
+				</ul>
+             </div>
+          <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copyright start here-->
+<div class="copyright">
+	<div class="container">
+	   <div class="copy-main">
+			<p> © 2016 Chi-Cuisine. All rights reserved | Design by Shuyi Zheng </a></p>
+	   </div>
+	   <script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  </div>
+</div>
+<!--copyright end here-->

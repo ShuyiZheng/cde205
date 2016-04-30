@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Chi-cuision: Your Chinese menu</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+    
+    <style type="text/css">
+	  .search{
+		  position: relative;
+		  display: block;
+		  width: 256px;
+		  padding: 0;
+	  }
+	  
+	  .top-nav {
+		  width:69%;
+	  }
+	  
+	  @media (max-width: 1000px) {
+		  .top-nav {
+			  width: 63%;
+		  }
+	  }
+	  
+	  @media (max-width: 768px) {
+		  .top-nav {
+			  width: 10%;
+		  }
+	  }
+	  
+	  @media (max-width: 480px) {
+		  span.menu img {
+			  width:32px;
+		  }
+	  }
+	  
+	  .search input[type=text] {
+		  width:100%;
+		  height:30px;
+		  border-radius:5px;
+		  outline:none;
+		  border:none;
+		  border:1px solid #999;
+		  padding-right:30px;
+		  padding-left:10px;
+		  box-sizing:border-box;
+	  }
+	  
+	  .search input[type=submit] {
+		  position:absolute;
+		  right:0px;
+		  top:0px;
+		  background:url('images/search.png') center center no-repeat;
+		  width:30px;
+		  height:30px;
+		  border:none;
+	  }
+	  
+	  .search form {
+		  margin:0px;
+		  padding:0px;
+	  }
+	</style>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header-strip"></div>
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			  <div class="logo">
+			  	<h1><a href="index.html">Chi-Cuisine</a></h1>
+			  </div>
+        </div>
+	</div>
+</div>
+<div class="navg-strip">
+    <div class="container">
+        <div class="navg-main">
+      	    <div class="top-nav">
+      	 	    <span class="menu"> <img src="images/icon.png" alt=""/></span>
+			    <ul class="res">
+				    <li><a href="
+				        index.html" class="active">Home</a></li>
+				    <li><a class="scroll" href="#recipes">Recipes&Menus</a></li>
+				    <li><a class="scroll" href="#map">Foodmap</a></li>
+			        <li><a class="scroll" href="#contact">Contact</a></li>
+			    </ul> 
+			    <!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$("ul.res").slideToggle(500, function(){
+							});
+                        });
+			        </script>	
+		    </div>
+	    	<div class="search-in" >
+		    	<div class="search" >
+				    <form>
+				 	    <input type="text"  class="text">
+				    	<input type="submit" value="">
+			    	</form>
+			    </div>
+	        </div>
+	    
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--header end here-->
+<!--single start here-->
+<div class="single">
+	<div class="container">
+	    <div class="col-md-8 ">
+			<div class=" single-grid">
+				<img class="img-responsive" src="images/p6.jpg" alt=""  class="img-responsive">
+				<div class="lone-line">
+					<h4>Beijing Roast Duck</h4>
+					<p>A saying that is often heard is: "There are two things you must do in Beijing: eat Beijing Roast Duck and see the Great Wall." Therefore, tasting Beijing Roast Duck is a key part of any Beijing Tour. Beijing Duck has even been dubbed "the number one delicious food in the world."</p>
+					<h5>About Beijing Roast Duck</h5>
+                    <p>The duck must be of the white Beijing variety and of superior quality, a "force-fed duck" that weighs about three kilograms. When roasting the duck, compressed air is injected into the duck between its skin and flesh to make the skin glossy and shiny. By using less smoky, hard wood fuel like fruit tree branches (pear, peach or date branches for instance), the duck has a fruity flavor and is red in color.</p>
+                    <h6>Unique Manner of Serving and Eating Beijing Duck</h6>
+                    <p>The manner of serving and eating Beijing Duck is also unique. The chef presents you the whole duck before taking it away for slicing. One duck may produce about 120 very thin slices, each containing both meat and skin. The duck slices are brought back to the table with some thin pancakes, green onion or shallot, sweet soybean paste and fresh cucumber, and sometimes garlic paste and sugar. The good way to enjoy the Beijing Duck is as follows: take a piece of the pancake in one hand, then put three or four slices of the duck onto the pancake with each of the above mentioned vegetables and seasonings. The soybean paste is most important. Finally roll up the pancake and eat it.</p>
+                    <p>Nearly every part of the duck can be prepared as food. Quanjude Roast Duck Restaurant serves the so called All Duck Banquet, in which the bone of the duck together with cabbage and Chinese water melon is made into a fresh white soup and is served at the end of the banquet.</p>
+				    <h6>The Popularity of Beijing Duck in Abroad</h6>
+				    <p>The Beijing Roast Duck is not only popular in China but also abroad. The former US Secretary of State Dr. Kissinger, for instance, is extremely fond of Beijing Roast Duck. He takes every possible chance to taste it. He thus plays an important role of advertising Roast Duck in the States and many restaurants there try to serve this delicacy. An interesting story is heard in the US about the duck. At first the cooking method for roast duck was against the state food legislation of California, therefore it was banned. To solve the problem Roast Duck was sent to California University for testing. The test results showed that Peking Duck was safe as food. What surprised others was that the Roast Duck was so delicious that the scientists in the lab ate up all the tested duck. Roast Duck had long been a best seller in Beijing restaurants.</p>
+				    <p>The Bush family, the family of two former US Presidents, are widely known to be real Beijing Roast Duck lovers. Their tradition of eating Roast Duck started from President Bush Senior in the 1970s when he was working in the US Embassy of Beijing. Returning home, he still can not resist the temptation of this food and often enjoys it with his whole family at a restaurant called Beijing Restaurant in North Virginia. His love for the duck has already been passed down to his sons and grandchildren. Of course, celebrities who have visited this restaurant include many others. Good examples are the Philippines President, a Thai Queen, princes from Saudi Arabia, the former US Minister of Defense, as well as former and current US State Secretaries Generals Powell and Rice. The hundreds of picture hanging inside the restaurant are the best evidence.</p>
+				</div>
+			</div>
+	    </div>
+    </div>
+</div>
+
+<!--//single end here-->
+
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			 <section class="col-md-3 ftr-title">
+                    <h4  class="section-title">Chi-Cuisne</h4>
+             </section>
+             <div class="col-md-3 ftr-grd">
+                 <h3>Site Link</h3>
+                <ul class="ftr-links">
+                	<li><a href="#home">Home</a></li>
+				    <li><a href="#recipes">Recipes & Menus</a></li>
+				    <li><a href="#map">Food maps</a></li>
+				    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </div>
+             <div class="col-md-3 ftr-grd">
+                   <h3>Quick Links</h3>
+                   <ul class="ftr-categ">
+					<li><a href="#">Healthy Recipes</a></li>
+					<li><a href="#">Low-Cal Recipes</a></li>
+					<li><a href="#">Low-Fat Recipes</a></li>
+					<li><a href="#">Mediterranean Recipes</a></li>
+					<li><a href="#">Vegetarian Recipes</a></li>
+				</ul>
+             </div>
+          <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copyright start here-->
+<div class="copyright">
+	<div class="container">
+	   <div class="copy-main">
+			<p> © 2016 Chi-Cuisine. All rights reserved | Design by Shuyi Zheng </a></p>
+	   </div>
+	   <script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  </div>
+</div>
+<!--copyright end here-->

@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Chi-cuision: Your Chinese menu</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+    
+    <style type="text/css">
+	  .search{
+		  position: relative;
+		  display: block;
+		  width: 256px;
+		  padding: 0;
+	  }
+	  
+	  .top-nav {
+		  width:69%;
+	  }
+	  
+	  @media (max-width: 1000px) {
+		  .top-nav {
+			  width: 63%;
+		  }
+	  }
+	  
+	  @media (max-width: 768px) {
+		  .top-nav {
+			  width: 10%;
+		  }
+	  }
+	  
+	  @media (max-width: 480px) {
+		  span.menu img {
+			  width:32px;
+		  }
+	  }
+	  
+	  .search input[type=text] {
+		  width:100%;
+		  height:30px;
+		  border-radius:5px;
+		  outline:none;
+		  border:none;
+		  border:1px solid #999;
+		  padding-right:30px;
+		  padding-left:10px;
+		  box-sizing:border-box;
+	  }
+	  
+	  .search input[type=submit] {
+		  position:absolute;
+		  right:0px;
+		  top:0px;
+		  background:url('images/search.png') center center no-repeat;
+		  width:30px;
+		  height:30px;
+		  border:none;
+	  }
+	  
+	  .search form {
+		  margin:0px;
+		  padding:0px;
+	  }
+	</style>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header-strip"></div>
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			  <div class="logo">
+			  	<h1><a href="index.html">Chi-Cuisine</a></h1>
+			  </div>
+        </div>
+	</div>
+</div>
+<div class="navg-strip">
+    <div class="container">
+        <div class="navg-main">
+      	    <div class="top-nav">
+      	 	    <span class="menu"> <img src="images/icon.png" alt=""/></span>
+			    <ul class="res">
+				    <li><a href="
+				        index.html" class="active">Home</a></li>
+				    <li><a class="scroll" href="#recipes">Recipes&Menus</a></li>
+				    <li><a class="scroll" href="#map">Foodmap</a></li>
+			        <li><a class="scroll" href="#contact">Contact</a></li>
+			    </ul> 
+			    <!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$("ul.res").slideToggle(500, function(){
+							});
+                        });
+			        </script>	
+		    </div>
+	    	<div class="search-in" >
+		    	<div class="search" >
+				    <form>
+				 	    <input type="text"  class="text">
+				    	<input type="submit" value="">
+			    	</form>
+			    </div>
+	        </div>
+	    
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--header end here-->
+<!--single start here-->
+<div class="single">
+	<div class="container">
+	    <div class="col-md-8 ">
+			<div class=" single-grid">
+				<img class="img-responsive" src="images/p4.jpg" alt=""  class="img-responsive">
+				<div class="lone-line">
+					<h4>Dumplings</h4>
+					<p>Dumplings are an important Chinese New Year food in northern China. On Chinese New Year's Eve, Northerners usually make and eat dumplings. There are many ways to cook dumplings, including boiling, steaming, and frying.</p>
+					<h5>Preparation and Cooking Instructions</h5>
+					<h6>1. Make the Dumpling Wrappers</h6>
+                    <p>a) Put the wheat flour in a basin. Add some salt and mix evenly. Pour water in the center of the flour. Knead and stir the flour into dough. Cover the dough with a wet cloth for about half an hour.</p>
+                    <p>b) Sprinkle some flour onto a board and place the dough on the board. Knead the dough into a long strip and cut it into dumpling-skin-size pieces.</p>
+                    <p>c) Roll each small piece flat with a rolling pin to make the dumpling wrappers. Stack the wrappers aside, sprinkling some flour on each to prevent them from sticking together.</p>
+					<img class="img-responsive " src="images/s7.jpg" alt="">
+					<h6>2. Make the Dumpling Filling</h6>
+					<p>a) Clean and mince the pork.</p>
+				   	<p>b) Clean and mince the Chinese cabbage.</p>
+				    <p>c) Mix the ground pork with the minced Chinese cabbage, salt, cooking wine, chicken powder, sugar, eggs, and some water, and stir them evenly.</p>
+				    <img class="img-responsive " src="images/s8.jpg" alt="">
+				    <h6>3. Fill the Dumplings</h6>
+				    <p>a) Put a spoon of filling into the center of each wrapper.</p>
+				   	<p>b) Fold and pinch the wrapper edge together hard.</p>
+				    <p>c) Make sure the wrapper edge is sealed.</p>
+				    <img class="img-responsive " src="images/s9.jpg" alt="">
+				    <h6>4.Make the Dipping Sauce (Adjust to Your Taste)</h6>
+				    <p>a) Clean and chop some green onion, ginger, and garlic.</p>
+				   	<p>b) Make starchy sauce by mixing starch, boiled water, sugar, vinegar, soy sauce, and sesame oil.</p>
+				    <p>c) Add the sliced ginger and garlic to an oiled wok, and stir-fry them until the fragrance is released.</p>
+				    <p>d) Add the starchy sauce to the wok and bring to the boil.</p>
+				    <p>e) Add the chopped green onions. Stir-fry quickly to finish the dipping sauce.</p>
+				    <img class="img-responsive " src="images/s10.jpg" alt="">
+				    <h6>5.Cook the Dumplings</h6>
+				    <p>a) Boil some water, and add the dumplings one by one. While boiling the dumplings, stir them to prevent them from sticking together or to the pot.</p>
+				   	<p>b) When the water boils again, add a small cup of water. Cover and repeat twice more.</p>
+				    <p>c) Drain the dumplings and serve them in a dish.</p>
+				    <img class="img-responsive " src="images/s11.jpg" alt="">
+				</div>
+			</div>
+	    </div>
+    </div>
+</div>
+
+<!--//single end here-->
+
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			 <section class="col-md-3 ftr-title">
+                    <h4  class="section-title">Chi-Cuisne</h4>
+             </section>
+             <div class="col-md-3 ftr-grd">
+                 <h3>Site Link</h3>
+                <ul class="ftr-links">
+                	<li><a href="#home">Home</a></li>
+				    <li><a href="#recipes">Recipes & Menus</a></li>
+				    <li><a href="#map">Food maps</a></li>
+				    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </div>
+             <div class="col-md-3 ftr-grd">
+                   <h3>Quick Links</h3>
+                   <ul class="ftr-categ">
+					<li><a href="#">Healthy Recipes</a></li>
+					<li><a href="#">Low-Cal Recipes</a></li>
+					<li><a href="#">Low-Fat Recipes</a></li>
+					<li><a href="#">Mediterranean Recipes</a></li>
+					<li><a href="#">Vegetarian Recipes</a></li>
+				</ul>
+             </div>
+          <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copyright start here-->
+<div class="copyright">
+	<div class="container">
+	   <div class="copy-main">
+			<p> © 2016 Chi-Cuisine. All rights reserved | Design by Shuyi Zheng </a></p>
+	   </div>
+	   <script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  </div>
+</div>
+<!--copyright end here-->

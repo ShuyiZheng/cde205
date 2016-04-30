@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Chi-cuision: Your Chinese menu</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+    
+    <style type="text/css">
+	  .search{
+		  position: relative;
+		  display: block;
+		  width: 256px;
+		  padding: 0;
+	  }
+	  
+	  .top-nav {
+		  width:69%;
+	  }
+	  
+	  @media (max-width: 1000px) {
+		  .top-nav {
+			  width: 63%;
+		  }
+	  }
+	  
+	  @media (max-width: 768px) {
+		  .top-nav {
+			  width: 10%;
+		  }
+	  }
+	  
+	  @media (max-width: 480px) {
+		  span.menu img {
+			  width:32px;
+		  }
+	  }
+	  
+	  .search input[type=text] {
+		  width:100%;
+		  height:30px;
+		  border-radius:5px;
+		  outline:none;
+		  border:none;
+		  border:1px solid #999;
+		  padding-right:30px;
+		  padding-left:10px;
+		  box-sizing:border-box;
+	  }
+	  
+	  .search input[type=submit] {
+		  position:absolute;
+		  right:0px;
+		  top:0px;
+		  background:url('images/search.png') center center no-repeat;
+		  width:30px;
+		  height:30px;
+		  border:none;
+	  }
+	  
+	  .search form {
+		  margin:0px;
+		  padding:0px;
+	  }
+	</style>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header-strip"></div>
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			  <div class="logo">
+			  	<h1><a href="index.html">Chi-Cuisine</a></h1>
+			  </div>
+        </div>
+	</div>
+</div>
+<div class="navg-strip">
+    <div class="container">
+        <div class="navg-main">
+      	    <div class="top-nav">
+      	 	    <span class="menu"> <img src="images/icon.png" alt=""/></span>
+			    <ul class="res">
+				    <li><a href="
+				        index.html" class="active">Home</a></li>
+				    <li><a class="scroll" href="#recipes">Recipes&Menus</a></li>
+				    <li><a class="scroll" href="#map">Foodmap</a></li>
+			        <li><a class="scroll" href="#contact">Contact</a></li>
+			    </ul> 
+			    <!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$("ul.res").slideToggle(500, function(){
+							});
+                        });
+			        </script>	
+		    </div>
+	    	<div class="search-in" >
+		    	<div class="search" >
+				    <form>
+				 	    <input type="text"  class="text">
+				    	<input type="submit" value="">
+			    	</form>
+			    </div>
+	        </div>
+	    
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--header end here-->
+<!--single start here-->
+<div class="single">
+	<div class="container">
+	    <div class="col-md-8 ">
+			<div class=" single-grid">
+				<img class="img-responsive" src="images/p5.jpg" alt=""  class="img-responsive">
+				<div class="lone-line">
+					<h4>Chow Mein</h4>
+					<p>Chow mein refers to stir-fried noodles with little  soup that are characterized by a salty taste. The name is from the Taishan Chinese dialect (a kind of Cantonese). Taishan is a county of Guangdong province. There are many varieties of chow mien all over the world. It is a famous Chinese cuisine. The different kinds of noodles used in chow mein include rice noodles, flat noodles, fine noodles, sliced noodles, filleted noodles, silk noodles, and more, Chow mein is usually stir fried with brown and glossy soy sauce.</p>
+					<h5>Cooking Method</h5>
+                    <p>1. Break the eggs and put them into a bowl. Beat the eggs with chopsticks until thoroughly mixed . Add a little refined salt  and set them aside to  use later.</p>
+                    <p>2. Wash vegetables and cut them into small pieces. Clean the scallions and dice them finely. Set them by to use later.</p>
+                    <p>3. Cook the noodles until they are well-done. Rinse them with cool water. Dish them out of the wok and leave them to cool.</p>
+				    <p>4. Add an appropriate amount of peanut oil into the wok. Heat up the wok until it is seventy percent hot. Add the egg mixture into the wok and stir the eggs around until they are scattered and broken. Place them in a bowl when done.</p>
+				    <p>5. Get another wok and heat it up with the rest of the peanut oil to seventy percent hot. Then add the scallion pieces into the wok. When the scallions spread their fragrance, drop rape pieces, soy sauce, and refined salt into the wok. Cook them until welldone. </p>
+				    <p>6. Nextdish them out and leave the juice in the wok. Bring  the juice to a boil then put the noodles into the wok and stir for about 3 minutes. When the juice has cooked out and the noodles are well-done, add the eggs and vegetable pieces. Mix them evenly then  serve.</p>
+				</div>
+			</div>
+	    </div>
+    </div>
+</div>
+
+<!--//single end here-->
+
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			 <section class="col-md-3 ftr-title">
+                    <h4  class="section-title">Chi-Cuisne</h4>
+             </section>
+             <div class="col-md-3 ftr-grd">
+                 <h3>Site Link</h3>
+                <ul class="ftr-links">
+                	<li><a href="#home">Home</a></li>
+				    <li><a href="#recipes">Recipes & Menus</a></li>
+				    <li><a href="#map">Food maps</a></li>
+				    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </div>
+             <div class="col-md-3 ftr-grd">
+                   <h3>Quick Links</h3>
+                   <ul class="ftr-categ">
+					<li><a href="#">Healthy Recipes</a></li>
+					<li><a href="#">Low-Cal Recipes</a></li>
+					<li><a href="#">Low-Fat Recipes</a></li>
+					<li><a href="#">Mediterranean Recipes</a></li>
+					<li><a href="#">Vegetarian Recipes</a></li>
+				</ul>
+             </div>
+          <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copyright start here-->
+<div class="copyright">
+	<div class="container">
+	   <div class="copy-main">
+			<p> © 2016 Chi-Cuisine. All rights reserved | Design by Shuyi Zheng </a></p>
+	   </div>
+	   <script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  </div>
+</div>
+<!--copyright end here-->
